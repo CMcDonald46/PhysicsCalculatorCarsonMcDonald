@@ -1,7 +1,7 @@
 // Main File for the Physhics Calculator
 // Created: 3/20/24
 // Created by: Carson McDonald
-// This is my main file that is in charge of menu input.
+// This is my main file that is in charge of menu input and has the function calls.
 #include "Physics_Caculator.h"
 
 int main() {
@@ -14,9 +14,9 @@ int main() {
     cout << "Please enter a number to select an option: Please enter a number "
             "(int):"
          << endl;
-    cout << color; // Change input to green!
+   // cout << color; // Change input to green!
     validateInt(choice);
-    cout << reset; // Reset back to no color!
+    //cout << reset; // Reset back to no color!
     if (choice == 1) {
       velocity();
     } else if (choice == 2) {

@@ -7,7 +7,7 @@
 #include <sstream>
 #include <string>
 using namespace std;
-// My function prototypes.
+// My function prototypes for my validations.
 double validateDouble(double &);
 int validateInt(int &);
 string validateString(string &);
@@ -42,7 +42,8 @@ double validateDouble(double &doubleInput) {
 }
 int validateInt(int &intInput) {
   while (true) {
-    // cout << "Please enter a number (int): ";
+    // cout << "Please enter a number (int): "; Took this out so that my first input could be colored in main.
+    // I ran into a problem where the first input and this cout statement were colored.
     try {
       intInput = getValidatedInput<int>();
     } catch (exception &e) {
