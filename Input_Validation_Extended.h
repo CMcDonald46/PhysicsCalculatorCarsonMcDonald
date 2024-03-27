@@ -29,7 +29,7 @@ T getValidatedInput() // Template for Validations
 // My function definitions for my validations.
 double validateDouble(double &doubleInput) {
   while (true) {
-    cout << "Please enter a number (double): ";
+  //  cout << "Please enter a number (double): "; Removed this to allow for color green to be allowed.
     try {
       doubleInput = getValidatedInput<double>();
     } catch (exception &e) {
@@ -56,7 +56,7 @@ int validateInt(int &intInput) {
 }
 string validateString(string &stringInput) {
   while (true) {
-    cout << "Please enter a string: ";
+   // cout << "Please enter a string: "; Removed this to allow for color green to be allowed.
     try {
       stringInput = getValidatedInput<string>();
     } catch (exception &e) {
@@ -69,7 +69,7 @@ string validateString(string &stringInput) {
 }
 char validateChar(char &charInput) {
   while (true) {
-    cout << "Please enter a character: ";
+  //  cout << "Please enter a character: "; Removed this to allow for color green to be allowed.
     try {
       charInput = getValidatedInput<char>();
     } catch (exception &e) {

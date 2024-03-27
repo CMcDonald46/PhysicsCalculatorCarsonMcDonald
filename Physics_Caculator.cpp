@@ -14,9 +14,9 @@ int main() {
     cout << "Please enter a number to select an option: Please enter a number "
             "(int):"
          << endl;
-    // cout << color; // Change input to green!
+      cout << color; // Change input to green!
     validateInt(choice);
-    //cout << reset; // Reset back to no color!
+      cout << reset; // Reset back to no color!
     if (choice == 1) {
       velocity();
     } else if (choice == 2) {
@@ -24,7 +24,9 @@ int main() {
     } else if (choice == 3) {
       do {
         motionMenu(); // Entering the motion menu do while loop.
+        cout << color;
         validateInt(choice);
+        cout << reset;
         if (choice == 1) {
           motionVelocity();
         } else if (choice == 2) {
