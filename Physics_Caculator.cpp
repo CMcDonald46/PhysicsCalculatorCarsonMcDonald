@@ -11,8 +11,7 @@ int main() {
   do                        // Beginning of my do while loop.
   {
     showMenu();
-    cout << "Please enter a number to select an option: Please enter a number "
-            "(int):"
+    cout << "Please enter a number to select an option: Please enter an integer 1-8: "
          << endl;
       cout << color; // Change input to green!
     validateInt(choice);
@@ -48,7 +47,7 @@ int main() {
     } else if (choice == 8) {
       clearScreen();
     } else if (choice > 8 || choice < 1) {
-      cout << "Invalid option for the menu. Please enter a Number from 1-7."
+      cout << "Invalid option for the menu. Please enter an integer from 1-8."
            << endl;
     }
   } while (choice != 7); // End of do while loop.
