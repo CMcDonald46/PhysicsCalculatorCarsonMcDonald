@@ -13,7 +13,7 @@ int validateInt(int &);
 string validateString(string &);
 char validateChar(char &);
 template <typename T>
-T getValidatedInput() // Template for Validations
+T getValidatedInput() // Template for Validations. Needed it is the fuction that allows for the user to input a value and it get corrected as a true or false validation.
 {
   T result;
   cin >> result;

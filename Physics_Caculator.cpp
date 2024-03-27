@@ -16,12 +16,12 @@ int main() {
       cout << color; // Change input to green!
     validateInt(choice);
       cout << reset; // Reset back to no color!
-    if (choice == 1) {
+    if (choice == 1) { // Could have used a switch statement but I wanted to use if!
       velocity();
     } else if (choice == 2) {
       acceleration();
     } else if (choice == 3) {
-      do {
+      do { // an if statement would have caused this to exit after. The Do While caused it to loop forever.
         motionMenu(); // Entering the motion menu do while loop.
         cout << color;
         validateInt(choice);
